@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    padding: 10px;
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+}
+
+#terminal-container {
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    background: #151518;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    border-bottom: 3px solid #444;
+    border-radius: 35px;
+    border: 10px solid #242435;
+}
+
+#terminal-output {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#terminal-input {
+    display: flex;
+    align-items: center;
+}
+
+#terminal-input input {
+    flex: 1;
+    background: #1e1e2f;
+    color: white;
+    border: 2px solid #ffffff2f;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#terminal-input button {
+    background: #3e7cff;
+    color: white;
+    box-shadow: 0 0 8px #3e7cff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#terminal-input button:hover {
+    background: #356dcc;
+}
+
+#explorer {
+    margin-top: 10px;
+    background: #242435;
+    border-radius: 35px;
+    padding: 15px;
+    height: 50%;
+    overflow-y: auto;
+}
+
+.explorer-header {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.folder, .file {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.folder {
+    background-color: #ffeb3b;
+    box-shadow: 0 0 8px #fff064;
+    width: 1.5px;
+    color: rgb(255, 255, 255);
+}
+
+.file {
+    background-color: #2196f3;
+    box-shadow: 0 0 8px #0095ff;
+    width: 1.5px;
+    color: white;
+}
+
+.folder i, .file i {
+    margin-right: 10px;
+}
+
+.folder i {
+    color: #ffa726;
+}
+
+.file i {
+    color: #90caf9;
+}
+
+.highlight {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+
+.logoimg {
+    width: 50px;
+    margin: 10px;
+}
+
+.explorer-id {
+    margin-left: 20px;
+    transform: translateY(8px);
+}

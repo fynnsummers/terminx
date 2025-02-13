@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminx</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="logoimg" src="logo.png" alt="logo">
+    </div> 
+    <div id="terminal-container">
+        <div id="terminal-output">Welcome to <i style="color: cornflowerblue;">TerminX!</i> I hope u have fun exploring my project :) <br>To start, you can try <i style="color: rgb(255, 183, 0);">-open file commands.txt</i> <br>You are currently using Version <i style="color: cornflowerblue;">2.43 Beta</i></div>
+        <div id="terminal-input">
+            <input type="text" id="command" placeholder="Enter command...">
+            <button onclick="executeCommand()">Enter</button>
+        </div>
+    </div>
+    <div id="explorer">
+        <div class="explorer-header">Explorer: <i style="color: orange;">root</i></div>
+    </div>
+    <div class="explorer-id">
+        <b>#</b><i style="color: orange;" id="random-id"></i>
+    </div> 
+    <footer>      
+        <p style="margin-left: 15px;">Created by Fynn Summers</a> <i style="color: cornflowerblue;"> 2.43 Beta</i></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
